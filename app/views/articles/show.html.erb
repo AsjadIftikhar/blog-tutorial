@@ -5,3 +5,5 @@
 <ul>
   <li><%= link_to "Edit", edit_article_path(@article) %></li>
 </ul>
+
+<%= button_to "delete", { :controller => :articles, :action => 'destroy', :id => @article.id }, :method => :delete %>
